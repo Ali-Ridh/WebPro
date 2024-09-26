@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Food | Surabaya</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ali Ridho</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+            <li class="nav-item"><a class="nav-link" href="hometown_tourist.html">Visit Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Food Section -->
+    <section class="food-section py-5">
+        <div class="container">
+            <h2 class="text-center text-dark font-weight-bold">Explore Local Food</h2>
+            <div class="row mt-4">
+                <!-- Soto Ayam Surabaya -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="../images/soto.jpeg" class="card-img-top" alt="Soto Ayam Surabaya">
+                        <div class="card-body">
+                            <h5 class="card-title">Soto Ayam Surabaya</h5>
+                            <p class="card-text text-muted">A delicious, traditional chicken soup from Surabaya.</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#recipeModal" data-recipe="soto">Check Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rawon -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="../images/rawon.jpeg" class="card-img-top" alt="Rawon">
+                        <div class="card-body">
+                            <h5 class="card-title">Rawon</h5>
+                            <p class="card-text text-muted">A flavorful black beef soup, unique to East Java.</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#recipeModal" data-recipe="rawon">Check Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lontong Balap -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="../images/balap.jpeg" class="card-img-top" alt="Lontong Balap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lontong Balap</h5>
+                            <p class="card-text text-muted">A street food icon of Surabaya with rice cakes and savory soup.</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#recipeModal" data-recipe="lontong">Check Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add other dishes similarly -->
+                <!-- Tahu Tek -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="../images/tahu-tek.jpg" class="card-img-top" alt="Tahu Tek">
+                        <div class="card-body">
+                            <h5 class="card-title">Tahu Tek</h5>
+                            <p class="card-text text-muted">Fried tofu with egg, smothered in peanut sauce.</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#recipeModal" data-recipe="tahutek">Check Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rujak Cingur -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="../images/rujak.jpg" class="card-img-top" alt="Rujak Cingur">
+                        <div class="card-body">
+                            <h5 class="card-title">Rujak Cingur</h5>
+                            <p class="card-text text-muted">A mixed salad with fermented shrimp paste and cow snout.</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#recipeModal" data-recipe="rujak">Check Recipe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sate Klopo -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="../images/sate.jpeg" class="card-img-top" alt="Sate Klopo">
+                        <div class="card-body">
+                            <h5 class="card-title">Sate Klopo</h5>
+                            <p class="card-text text-muted">A unique coconut-infused satay, a specialty of Surabaya.</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#recipeModal" data-recipe="sate">Check Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Recipes -->
+    <div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="recipeModalLabel">Recipe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="recipeContent">
+            <!-- Recipe details will be injected here -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/recipe.js"></script>
+</body>
+</html>

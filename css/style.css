@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #FDFDFD;
+}
+
+.hero .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.food-section h2, .tourist-section h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal styling for recipe */
+.modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-vid{
+    width: 300px;
+}
+
+/* Default state for sections */
+.story-section {
+    margin-bottom: 30px; /* Add space between sections */
+}
+
+.story-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 600px; /* Sets a maximum width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    display: block; /* Centers the image */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.story-section p {
+    margin-top: 15px; /* Space between the image and text */
+}
+
+
+.story-section.animate {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Animating the text elements */
+.text-animate {
+    opacity: 0;
+    transform: translateY(30px); /* Slight downward offset for text */
+    transition: all 0.5s ease-out;
+}
+
+.story-section.animate .text-animate {
+    opacity: 1;
+    transform: translateY(0); /* Move text to original position */
+}
+
+/* Add delay for staggered effect */
+h2.text-animate {
+    transition-delay: 0.1s;
+}
+
+p.text-animate {
+    transition-delay: 0.2s;
+}
+
+button.text-animate {
+    transition-delay: 0.3s;
+}
+/* Minimize Button Styling */
+.minimize-btn {
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Minimized Modal */
+.modal.minimized .modal-dialog {
+    width: 300px;
+    height: 200px;
+}
+
+/* Minimized Video */
+.modal.minimized .modal-vid {
+    width: 100%;
+    height: 100px; /* Adjusted video height */
+}
+
+/* Hide the text description when minimized */
+.modal.minimized .modal-description {
+    display: none;
+}
