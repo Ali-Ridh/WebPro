@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ampel and Surabaya</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ali Ridho</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="hometown.html">About Ampel</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tourist.html">Visit Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ampel Section -->
+    <section class="story-section py-5" id="ampel">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Discover Ampel</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/ampel.jpeg" alt="Ampel" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <p class="lead">Ampel is the heart of religious and cultural heritage in Surabaya. Visit Pasar Ampel and immerse yourself in the Arab and Madurese culture, surrounded by historical mosques and vibrant market life.</p>
+                    <p>Expect a blend of Middle Eastern and Javanese cultures, and an ambiance filled with the sounds, smells, and sights of history and devotion.</p>
+                    <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#modalAmpel">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tugu Pahlawan Section -->
+    <section class="story-section py-5 bg-light" id="tugu-pahlawan">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Tugu Pahlawan</h2>
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="../images/tugu-pahlawan.jpeg" alt="Tugu Pahlawan" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <p class="lead">A symbol of Surabaya's fight for independence, Tugu Pahlawan stands tall as a reminder of the bravery of the city's people. The legendary Bung Tomo and the Surabaya youth played a vital role in the battle against colonial forces here.</p>
+                    <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#modalTugu">Explore History</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tunjungan Section -->
+    <section class="story-section py-5" id="tunjungan">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Tunjungan: A Blend of History & Modernity</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/tunjungan.jpg" alt="Tunjungan" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <p class="lead">Tunjungan is where history meets modernity. Famous for the tearing of the Netherlands flag at Hotel Yamato, Tunjungan is now home to great culinary spots and shopping experiences at Tunjungan Mall.</p>
+                    <p>Don’t miss Pasar Tunjungan and my personal recommendation: Kokoro Kubari, a cozy Japanese food haven in Surabaya.</p>
+                    <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#modalTunjungan">Discover More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Modal Ampel -->
+<div class="modal fade" id="modalAmpel" tabindex="-1" aria-labelledby="modalAmpelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- Use a larger dialog class -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAmpelLabel">Ampel - A Cultural Journey</h5>
+          <button type="button" class="minimize-btn" aria-label="Minimize">
+            <span aria-hidden="true">&#8722;</span> <!-- Minus symbol -->
+          </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <video controls class="modal-vid">
+              <source src="../images/culinary-festival.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <p class="mt-3 modal-description">
+            Ampel has been a cultural and religious center since the 15th century. Explore its vibrant Arab quarter, with its traditional markets and religious significance tied to the Ampel Mosque.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Modal Tugu Pahlawan -->
+<div class="modal fade" id="modalTugu" tabindex="-1" aria-labelledby="modalTuguLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTuguLabel">Tugu Pahlawan - Heroic Struggle</h5>
+          <button type="button" class="minimize-btn" aria-label="Minimize">
+            <span aria-hidden="true">&#8722;</span>
+          </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <video controls class="modal-vid">
+            <source src="../images/tugu-pahlawan.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="mt-3 modal-description">
+            Tugu Pahlawan is a memorial to the Battle of Surabaya in November 1945. It commemorates the day when Bung Tomo and the youth of Surabaya stood up against colonial forces, marking a pivotal moment in Indonesia’s fight for independence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Tunjungan -->
+  <div class="modal fade" id="modalTunjungan" tabindex="-1" aria-labelledby="modalTunjunganLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTunjunganLabel">Tunjungan - A Historical & Culinary Experience</h5>
+          <button type="button" class="minimize-btn" aria-label="Minimize">
+            <span aria-hidden="true">&#8722;</span>
+          </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <video controls class="modal-vid">
+            <source src="../images/tunjungan.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="mt-3 modal-description">
+            At Hotel Yamato, Surabaya's youth tore the blue section off the Dutch flag, turning it into the Indonesian red-and-white flag. Today, Tunjungan is known for its great food and shopping spots. Make sure to visit Kokoro Kubari, a cozy spot for Japanese cuisine, and explore the vibrant Pasar Tunjungan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Link to external JavaScript file -->
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
